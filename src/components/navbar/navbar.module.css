@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --global-font-family: airbnb;
+  --global-text-primary: #ffffff;
+  --global-text-secondary: #2e266f;
+  --global-color-primary: #ffffff;
+  --global-color-secondary: #efc81a;
+  --global-text-md: 1.8rem;
+}
+
+@font-face {
+  font-family: airbnb;
+  src: url('../../assets/font/AirbnbCereal.otf');
+}
+
+/*---------------------N A V B A R----------------------- */
+
+.navColor {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.navColor {
+  background-color: var(--global-color-primary) !important;
+  z-index: 99;
+  width: 100%;
+}
+
+.navIcon {
+  display: none;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.list {
+  text-decoration: none;
+}
+.textNav {
+  color: var(--global-text-secondary) !important;
+  font-size: 1.8rem !important;
+  font-weight: 500;
+  margin-left: 7rem;
+}
+
+.textNav:hover {
+  color: var(--global-color-secondary) !important;
+}
+
+@media screen and (max-width: 990px) {
+  .navIcon {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .nav-item {
+    margin-top: -50px;
+    margin-left: 70px;
+    border-radius: 100px;
+    width: 200px;
+    height: 70px;
+    background-color: white;
+  }
+}
+
+.login {
+  position: absolute;
+  right: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  margin-top: -10px;
+}
+
+.secondaryNavbar button {
+  background: none;
+  border: none;
+}
+
+.login:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  color: var(--global-text-secondary);
+  background-color: var(--global-color-primary);
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.ps-a {
+  position: absolute;
+}

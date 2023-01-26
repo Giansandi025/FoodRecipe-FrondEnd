@@ -1,0 +1,400 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: airbnb;
+  src: url('../../assets/font/AirbnbCereal.otf');
+}
+
+:root {
+  --global-font-family: airbnb;
+  --global-text-primary: #ffffff;
+  --global-text-secondary: #2e266f;
+  --global-color-primary: #ffffff;
+  --global-color-secondary: #efc81a;
+  --global-text-md: 1.8rem;
+}
+
+/* ---------------------------------- */
+.size {
+  height: 100vh;
+}
+
+ul li a {
+  color: white;
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.menu img {
+  width: 10rem;
+  height: 10rem;
+  margin-top: 20rem;
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+  border-radius: 100%;
+}
+
+.text {
+  font-size: 2rem;
+}
+
+/* --------------------------------- */
+/*---------------------N A V B A R----------------------- */
+
+.navColor {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.navColor {
+  z-index: 99;
+  width: 100%;
+}
+
+.navIcon {
+  display: none;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.list {
+  text-decoration: none;
+}
+.list a {
+  color: black;
+}
+.list a:hover {
+  color: red;
+}
+.textNav {
+  color: var(--global-text-secondary) !important;
+  font-size: 1.8rem !important;
+  font-weight: 500;
+  margin-left: 7rem;
+}
+
+.textNav:hover {
+  color: var(--global-color-secondary) !important;
+}
+
+@media screen and (max-width: 990px) {
+  .navIcon {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .nav-item {
+    margin-top: -50px;
+    margin-left: 70px;
+    border-radius: 100px;
+    width: 200px;
+    height: 70px;
+    background-color: white;
+  }
+}
+
+.login {
+  position: absolute;
+  right: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2rem;
+  color: var(--global-text-primary);
+  cursor: pointer;
+}
+
+.login:hover {
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  color: var(--global-text-secondary);
+  background-color: var(--global-color-primary);
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.ps-a {
+  position: absolute;
+}
+/* ------------------------------------------ */
+.menu {
+  background-color: rgb(255, 188, 2);
+}
+
+.name {
+  font-size: 1.5rem;
+}
+
+.containerAction {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.containerLogo {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/image/beginning.webp');
+  height: 100vh;
+  width: 50vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.containerLogo::after {
+  content: '';
+  background-color: rgba(239, 200, 26, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.containerLogo .logo {
+  width: 18.2rem;
+  height: 22.4rem;
+  z-index: 2;
+}
+
+.containerLogo .textLogo {
+  color: var(--global-text-primary);
+  z-index: 2;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: var(--global-font-family);
+}
+
+.auth {
+  position: absolute;
+  right: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  overflow-x: scroll;
+  z-index: 1;
+}
+
+.auth h2 {
+  color: var(--global-color-secondary);
+  font-size: 2.7rem;
+  z-index: 2;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.auth a {
+  text-decoration: none;
+}
+
+.auth h4 {
+  color: #8692a6;
+  font-weight: 200;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+.auth .formAuth {
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.auth .fw {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: end;
+  width: 68%;
+}
+
+.auth .fw .forgot {
+  color: #999999;
+  font-family: var(--global-font-family);
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.auth .formAuth .inputText {
+  width: 37rem;
+  padding: 1.2rem 2rem;
+  border-radius: 0.4rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border: 1px solid #8692a6;
+  background-color: #fff;
+}
+
+.auth .formAuth .inputText:focus {
+  outline-color: #ffd92f;
+}
+
+.auth .formAuth .cForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.auth .formAuth .cForm .inputForm {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1.4rem;
+  color: #696f79;
+}
+
+.auth .formAuth .checkbox {
+  height: 2rem;
+  margin-top: 2rem;
+  justify-content: space-between;
+  width: 18rem;
+  display: flex;
+  font-size: 2rem;
+  color: #696f79;
+}
+
+.tCheckbox {
+  accent-color: var(--global-color-secondary);
+  cursor: pointer;
+}
+
+.auth .formAuth .submit {
+  margin-top: 3rem;
+  background-color: var(--global-color-secondary);
+  font-size: 1.4rem;
+  color: var(--global-text-primary);
+  border: none;
+  padding: 1.5rem 0rem 1.5rem 0rem;
+  cursor: pointer;
+}
+
+.auth .formAuth .submit:hover {
+  background-color: #ffd92f;
+  color: #818181;
+}
+
+.auth p {
+  margin-top: 5.5rem;
+  font-family: airbnb;
+  font-size: 1.2rem;
+  color: #999999;
+}
+
+.auth .register {
+  color: var(--global-color-secondary);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.auth .register:hover {
+  color: #ffe058;
+}
+
+.heightForm {
+  height: 120vh;
+}
+
+.auth .signup {
+  color: var(--global-color-secondary);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.txtCenter {
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .auth {
+    width: 100vw;
+  }
+  .containerAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .auth h4 {
+    font-size: 1.4rem !important;
+  }
+  .containerLogo {
+    max-width: 0rem;
+    position: relative !important;
+    display: none;
+  }
+  .auth {
+    position: relative;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  * {
+    font-size: 50%;
+  }
+  body {
+    background-color: var(--global-color-primary);
+  }
+  .auth .formLogin .checkbox {
+    width: 20rem;
+    align-items: center;
+  }
+  .auth .fw {
+    width: 70% !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .checkbox {
+    width: 15rem !important;
+  }
+  .auth .fw {
+    width: 20rem;
+  }
+  .auth .fw {
+    width: 95% !important;
+  }
+}
+
+.txtFloat {
+  width: 33rem;
+  text-align: center;
+}

@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --global-font-family: airbnb;
+  --global-text-primary: #ffffff;
+  --global-text-secondary: #2e266f;
+  --global-color-primary: #ffffff;
+  --global-color-secondary: #efc81a;
+  --global-text-md: 1.8rem;
+}
+
+@font-face {
+  font-family: airbnb;
+  src: url('../../assets/font/AirbnbCereal.otf');
+}
+
+/*---------------------F O R M----------------------- */
+
+.boxContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.box {
+  width: 80%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.containerOne {
+  flex-direction: column;
+}
+.inputImage {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(202, 202, 202) !important;
+  border-radius: 1.2rem;
+  width: 65vw;
+  height: 40rem;
+  margin-bottom: 5rem;
+}
+
+.inputImage img {
+  cursor: pointer;
+}
+
+.inputGr {
+  display: flex;
+  flex-direction: column;
+}
+
+.labelImage {
+  font-size: 2rem;
+}
+
+.inputTitle {
+  font-size: 2rem !important;
+  width: 65vw !important;
+  height: 6rem !important;
+  border: none !important;
+  border-radius: 0.7rem !important;
+  margin-bottom: 5rem !important;
+  padding-left: 2rem !important;
+  background-color: rgb(202, 202, 202) !important;
+}
+
+.inputTitle:focus {
+  outline-color: var(--global-color-secondary);
+}
+
+.inputIngredients {
+  margin-bottom: 5rem;
+
+  max-width: 100%;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 2rem;
+  padding: 1.5rem;
+  background-color: rgb(202, 202, 202) !important;
+}
+
+.inputIngredients:focus {
+  outline-color: var(--global-color-secondary);
+}
+
+.inputVidio {
+  font-size: 2rem;
+  width: 65vw;
+  height: 6rem;
+  border: none;
+  border-radius: 0.7rem;
+  padding-left: 2rem;
+  background-color: rgb(202, 202, 202) !important;
+}
+
+.inputVidio:focus {
+  outline-color: var(--global-color-secondary);
+}
+
+.mbFooter {
+  margin-bottom: 10rem;
+  margin-left: 24rem;
+}
+
+.btnSend {
+  margin-top: 5rem;
+  width: 40rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  background-color: var(--global-color-secondary);
+  cursor: pointer;
+  color: white;
+}
+
+.btnSend:hover {
+  background-color: #c7c7c7;
+}
+
+.btnSend:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 520px) {
+  .btnSend {
+    width: 30rem;
+    margin-left: -4rem;
+  }
+  .inputIngredients {
+    min-height: 12rem !important;
+  }
+  .containerOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .inputIngredients {
+    width: 91%;
+  }
+  .inputTitle,
+  .inputIngredients,
+  .inputVidio {
+    margin-left: 2rem !important;
+  }
+  .btnSend {
+    width: 20rem;
+    margin-left: 7rem;
+  }
+}

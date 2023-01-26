@@ -1,0 +1,292 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --global-font-family: airbnb;
+  --global-text-primary: #ffffff;
+  --global-text-secondary: #2e266f;
+  --global-color-primary: #ffffff;
+  --global-color-secondary: #efc81a;
+  --global-text-md: 1.8rem;
+}
+
+@font-face {
+  font-family: airbnb;
+  src: url('../../assets/font/AirbnbCereal.otf');
+}
+
+/*---------------------D E T A I L  R E C I P E----------------------- */
+
+.boxContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.box {
+  width: 80%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.containerOne {
+  flex-direction: column;
+}
+
+.boxOne,
+.boxTwo {
+  margin-top: 5rem;
+}
+
+.boxImage {
+  position: relative;
+}
+
+.boxImage img {
+  width: 60rem;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.action {
+  position: absolute;
+  right: 1rem;
+  bottom: 1.5rem;
+}
+
+.bgBookmark {
+  background-color: var(--global-color-secondary);
+  margin-right: 1rem;
+}
+
+.boxImage .iconAction {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--global-text-secondary) !important;
+  margin-top: 3rem;
+}
+
+.txt {
+  margin-top: 6rem;
+  color: #3f3a3a;
+  font-size: 2.8rem;
+  font-family: var(--global-font-family);
+}
+
+.containerTwo {
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.txtRecipe {
+  margin-top: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.play {
+  margin-top: 2rem;
+  width: 35rem;
+  height: 7rem;
+  border-radius: 1rem;
+  border: none;
+  font-size: 2rem;
+  background-color: var(--global-color-secondary);
+  cursor: pointer;
+  animation-duration: 0.9m;
+}
+
+.play:hover {
+  background-color: #c7c7c7;
+}
+
+.play:focus {
+  outline: none;
+}
+
+.comment {
+  padding: 1.5rem;
+  margin-top: 15rem;
+  width: 100%;
+  min-height: 20rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #bebebe;
+  font-size: 2rem;
+}
+
+.comment:focus {
+  outline-color: var(--global-color-secondary);
+}
+
+.btnSend {
+  margin-top: 5rem;
+  width: 40rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-size: 2rem;
+  background-color: var(--global-color-secondary);
+  cursor: pointer;
+  color: white;
+}
+
+.btnSend:hover {
+  background-color: #c7c7c7;
+}
+
+.btnSend:focus {
+  outline: none;
+}
+
+.boxComment {
+  width: 65%;
+  margin-bottom: 20rem;
+}
+
+.userComment {
+  display: flex;
+  align-items: center;
+}
+
+.userComment img {
+  margin-top: 1rem;
+  height: 6.4rem;
+  width: 6.4rem;
+  object-fit: cover;
+  border-radius: 3.2rem;
+}
+
+.boxCommentUser {
+  margin-left: 1rem;
+}
+
+.boxCommentUser h4 {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: var(--global-font-family);
+}
+
+.boxCommentUser p {
+  font-size: 1.8rem;
+  font-family: var(--global-font-family);
+}
+
+.containerFooter {
+  height: 40rem;
+  width: 100%;
+  background-color: var(--global-color-secondary);
+}
+
+.containerFooter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerFooter .boxTxtFooter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.containerFooter .boxTxtFooter h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--global-text-secondary);
+}
+
+.containerFooter .boxTxtFooter p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #707070 !important;
+  color: var(--global-text-secondary);
+}
+
+.containerFooter .cr {
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  width: 25%;
+}
+
+.containerFooter .cr ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.containerFooter .cr ul li a {
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.pijarcamp {
+  position: absolute;
+  bottom: 2rem;
+  right: 20rem;
+  font-size: 2rem;
+}
+
+.pijarcamp p {
+  color: #000;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 720px) {
+  .boxImage img {
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .play {
+    width: 25rem;
+    height: 6rem;
+  }
+  .boxComment {
+    width: 100%;
+    margin-bottom: 20rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .boxImage img {
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+  .btnSend {
+    margin-left: 0.2rem !important;
+  }
+}

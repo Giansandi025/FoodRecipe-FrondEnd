@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --global-font-family: airbnb;
+  --global-text-primary: #ffffff;
+  --global-text-secondary: #2e266f;
+  --global-color-primary: #fff5ec;
+  --global-color-secondary: #efc81a;
+  --global-text-md: 1.8rem;
+}
+
+@font-face {
+  font-family: airbnb;
+  src: url('../../assets/font/AirbnbCereal.otf');
+}
+/* ----------- F O O T E R---------------- */
+.containerFooter {
+  height: 40rem;
+  width: 100%;
+  background-color: var(--global-color-secondary);
+}
+
+.containerFooter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerFooter .boxTxtFooter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.containerFooter .boxTxtFooter h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--global-text-secondary);
+}
+
+.containerFooter .boxTxtFooter p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #707070 !important;
+  color: var(--global-text-secondary);
+}
+
+.containerFooter .cr {
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  width: 25%;
+}
+
+.containerFooter .cr ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.containerFooter .cr ul li a {
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.pijarcamp {
+  position: absolute;
+  bottom: 2rem;
+  right: 20rem;
+  font-size: 2rem;
+}
+
+.pijarcamp p {
+  color: #000;
+  font-weight: 500;
+}
+@media screen and (max-width: 720px) {
+  .containerFooter .boxTxtFooter h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--global-text-secondary);
+    margin-right: 5px;
+  }
+
+  .containerFooter .boxTxtFooter p {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #707070 !important;
+    color: var(--global-text-secondary);
+    margin-right: 5px;
+  }
+  .containerFooter .cr {
+    display: none;
+  }
+
+  .pijarcamp p {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,371 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --global-font-family: airbnb;
+  --global-text-primary: #ffffff;
+  --global-text-secondary: #2e266f;
+  --global-color-primary: #ffffff;
+  --global-color-secondary: #efc81a;
+  --global-text-md: 1.8rem;
+}
+
+@font-face {
+  font-family: airbnb;
+  src: url('../../assets/font/AirbnbCereal.otf');
+}
+/*---------------------N A V B A R----------------------- */
+
+.navColor {
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+
+.navColor {
+  background-color: var(--global-color-primary) !important;
+  z-index: 99;
+  width: 100%;
+}
+
+.navIcon {
+  display: none;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.list {
+  text-decoration: none;
+}
+.textNav {
+  color: var(--global-text-secondary) !important;
+  font-size: 1.8rem !important;
+  font-weight: 500;
+  margin-left: 7rem;
+}
+
+.textNav:hover {
+  color: var(--global-color-secondary) !important;
+}
+
+@media screen and (max-width: 990px) {
+  .navIcon {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .nav-item {
+    margin-top: -50px;
+    margin-left: 70px;
+    border-radius: 100px;
+    width: 200px;
+    height: 70px;
+    background-color: white;
+  }
+}
+
+.login {
+  position: absolute;
+  right: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 10rem;
+  color: black;
+}
+
+.login:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  color: var(--global-text-secondary);
+  background-color: var(--global-color-primary);
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.ps-a {
+  position: absolute;
+}
+
+/*---------------------P R O F I L E----------------------- */
+
+/* .tombol {
+  margin-right: -3rem;
+} */
+
+.profile {
+  position: relative;
+  margin-top: 10rem;
+  width: 17rem;
+  height: 20rem;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  margin-left: 580px;
+}
+
+.profile .userProfile {
+  width: 17rem;
+  height: 17rem;
+  object-fit: cover;
+  border-radius: 8.5rem;
+}
+
+.iEdit {
+  position: absolute;
+  bottom: 2rem;
+  right: 1rem;
+}
+
+.iEdit:hover {
+  bottom: 2.1rem;
+  right: 1.1rem;
+}
+
+.profile h1 {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #000;
+  font-family: var(--global-font-family);
+}
+
+.recipeChoice {
+  display: flex;
+  margin-top: 12rem;
+  position: relative;
+  flex-direction: column;
+  width: 90%;
+  height: 50vh;
+}
+
+.test {
+  width: 20rem;
+  height: 50rem;
+}
+
+.testA {
+  width: 140px;
+  font-size: 1rem;
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  border-radius: 20px;
+  padding: 5px 5px;
+  border: none;
+  border-radius: 2px 2px black;
+}
+
+.recipeChoice ul {
+  display: flex;
+  flex-direction: row;
+  width: 45%;
+  justify-content: space-around;
+}
+
+.recipeChoice ul li a {
+  font-size: 1.6rem;
+  color: #666666;
+  font-style: medium;
+  font-family: var(--global-font-family);
+  text-decoration: none;
+}
+
+.recipeChoice ul li a:focus {
+  color: #000 !important;
+}
+
+.hrStyle {
+  border: 0.1rem solid #9c9c9c;
+}
+
+.boxChoice {
+  position: relative;
+  margin-top: 5rem;
+  display: flex;
+}
+
+.boxImageChoice {
+  position: relative;
+  margin-left: 3rem;
+}
+
+.boxChoice img {
+  width: 27rem;
+  height: 17rem;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.boxChoice h1 {
+  position: absolute;
+  width: 12rem;
+  bottom: 1rem;
+  left: 2rem;
+  color: #fff;
+  font-family: var(--global-font-family);
+  font-size: 2.5rem;
+}
+
+.bgEdit {
+  position: absolute;
+  bottom: 1rem;
+  right: 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+  border-radius: 1rem;
+}
+
+button {
+  margin-left: 3px;
+}
+
+.bgEdit:hover {
+  background-color: var(--global-color-primary);
+}
+
+.editRecipe {
+  height: 3rem !important;
+  width: 3rem !important;
+}
+
+.editRecipe:hover {
+  height: 3.2rem !important;
+  width: 3.2rem !important;
+}
+
+.ml-2 {
+  margin-left: 2rem !important;
+}
+
+.bgNav {
+  background-color: var(--global-color-primary) !important;
+  font-family: var(--global-font-family);
+}
+
+.bdNone {
+  border: none;
+}
+.bd:focus {
+  border: none;
+}
+
+@media screen and (max-width: 520px) {
+  .recipeChoice ul {
+    width: 100%;
+  }
+  .boxChoice {
+    max-width: 50rem;
+    overflow-y: scroll;
+  }
+  .profile {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .profile {
+    margin-left: 125px;
+  }
+}
+
+/* ----------- F O O T E R---------------- */
+.containerFooter {
+  height: 40rem;
+  width: 100%;
+  background-color: var(--global-color-secondary);
+}
+
+.containerFooter {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.containerFooter .boxTxtFooter {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.containerFooter .boxTxtFooter h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  color: var(--global-text-secondary);
+}
+
+.containerFooter .boxTxtFooter p {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #707070 !important;
+  color: var(--global-text-secondary);
+}
+
+.containerFooter .cr {
+  display: flex;
+  position: absolute;
+  bottom: 2rem;
+  width: 25%;
+}
+
+.containerFooter .cr ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.containerFooter .cr ul li a {
+  font-size: 1.2rem;
+  color: #707070;
+}
+
+.pijarcamp {
+  position: absolute;
+  bottom: 2rem;
+  right: 20rem;
+  font-size: 2rem;
+}
+
+.pijarcamp p {
+  color: #000;
+  font-weight: 500;
+}

@@ -1,0 +1,578 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --global-font-family: airbnb;
+  --global-text-primary: #ffffff;
+  --global-text-secondary: #2e266f;
+  --global-color-primary: #fff5ec;
+  --global-color-secondary: #efc81a;
+  --global-text-md: 1.8rem;
+}
+
+@font-face {
+  font-family: airbnb;
+  src: url('../../assets/font/AirbnbCereal.otf');
+}
+
+/*---------------------N A V B A R----------------------- */
+.navStyle {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+.secondaryNavbar ul {
+  margin-top: -20px;
+}
+.secondaryNavbar li a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.navColor {
+  background-color: var(--global-color-primary) !important;
+  z-index: 99;
+  width: 100%;
+}
+
+.navIcon {
+  display: none;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+.textNav {
+  color: var(--global-text-secondary) !important;
+  font-size: 1.8rem !important;
+  font-weight: 500;
+  margin-left: 7rem;
+}
+
+.textNav:hover {
+  color: var(--global-color-secondary) !important;
+}
+
+@media screen and (max-width: 990px) {
+  .navIcon {
+    display: inline;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .nav-item {
+    margin-top: -50px;
+    margin-left: 70px;
+    border-radius: 100px;
+    width: 200px;
+    height: 70px;
+    background-color: white;
+  }
+  .secondaryNavbar ul {
+    margin-top: -150px;
+  }
+
+  .navStyle ul {
+    margin-top: -40px;
+  }
+}
+
+.login {
+  position: absolute;
+  right: 5rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2rem;
+  color: var(--global-text-primary);
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.login:hover {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 3rem;
+  color: var(--global-text-secondary);
+  background-color: var(--global-color-primary);
+  border-radius: 2rem;
+  margin-right: 1rem;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.psA {
+  position: absolute;
+}
+
+/*---------------------L A N D I N G   P A G E----------------------- */
+.hero {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.customRectangle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+  height: 140px;
+}
+.customRectangle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 90%;
+  background: transparent;
+  border: 10px solid #f1bc15;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.h3 {
+  color: black !important;
+}
+
+.grid12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.gapMedium {
+  gap: 24px;
+}
+.cusGridMd4 {
+  grid-column: span 4;
+}
+
+.titleImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  color: black;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.content {
+  width: 70vw;
+  height: 100vh;
+  background-color: var(--global-color-primary);
+}
+
+.decoration {
+  height: 100vh;
+  width: 30vw;
+  background-color: var(--global-color-secondary);
+}
+
+.hero .content .cover {
+  position: absolute;
+  top: 25rem;
+  left: 10rem;
+}
+
+.hero .content .cover h1 {
+  width: 50rem;
+  font-size: 6rem;
+  color: var(--global-text-secondary);
+  font-family: var(--global-font-family);
+}
+
+.hero .content .cover .search {
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 50rem;
+  height: 5.5rem;
+  background-color: var(--global-text-primary);
+  display: flex;
+}
+
+.search img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.hero .content .cover .search .input {
+  padding-left: 1rem;
+  font-family: airbnb;
+  width: 49.5rem;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--global-text-secondary);
+}
+
+.hero .content .cover .search .input:focus {
+  outline: none;
+}
+
+.decoration .bg {
+  position: absolute;
+}
+
+.decoration .bg .vectorOne {
+  position: absolute;
+  top: 20rem;
+  right: 1rem;
+  width: 25rem;
+  height: 20rem;
+}
+
+.decoration .bg .vectorTwo {
+  position: absolute;
+  top: 35rem;
+  right: 1rem;
+  width: 25rem;
+  height: 20rem;
+}
+
+.decoration .bg .foodDecoration .vegetable {
+  top: 2rem;
+  right: -20rem;
+  position: absolute;
+  width: 38rem;
+  height: 50rem;
+}
+
+.decoration .bg .foodDecoration .food {
+  top: 15rem;
+  right: -20rem;
+  position: absolute;
+  width: 47rem;
+  height: 47rem;
+}
+
+.titleRecipe {
+  position: relative;
+  width: 100%;
+  margin-top: -2rem;
+  background-color: var(--global-color-primary);
+}
+
+.titleRecipe .boxPopular {
+  position: relative;
+}
+
+.titleRecipe .txtTitle {
+  margin-top: 2rem;
+  margin-left: 5rem;
+  font-size: 4rem;
+  font-family: var(--global-text-primary);
+  color: var(--global-text-secondary);
+  border-left: var(--global-color-secondary) 1rem solid;
+  padding-left: 1rem;
+}
+
+.titleRecipe .boxPopular .vector {
+  margin: 3rem 0rem 0rem 2rem;
+  height: 4rem;
+  width: 30rem;
+}
+
+.titleRecipe .boxPopular .wrappingImage {
+  margin-left: 1rem;
+  width: 50%;
+  justify-content: space-around;
+  display: flex;
+}
+
+.titleRecipe .boxPopular .wrappingImage .food {
+  margin-left: 4rem;
+  height: 29rem;
+  width: 29rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+}
+
+.titleRecipe .boxPopular .wrappingImage .food .foodImage {
+  height: 30.6rem;
+  border-radius: 2rem;
+  width: 30.9rem;
+  object-fit: cover;
+}
+
+.titleRecipe .boxPopular .wrappingImage .food h4 {
+  position: absolute;
+  font-size: 3rem;
+  width: 16rem;
+  font-family: var(--global-font-family);
+  font-weight: 500;
+  color: var(--global-text-primary);
+  left: 10rem;
+  bottom: 0.5rem;
+}
+
+.boxNewRecipe {
+  margin-top: 13rem;
+  position: relative;
+}
+
+.boxNewRecipe .bxN {
+  position: relative;
+  display: flex;
+  margin-top: 8rem;
+}
+
+.boxNewRecipe .bxN .bxNPrimary {
+  width: 50rem;
+}
+
+.boxNewRecipe .bxN .bxNPrimary .bgImage {
+  height: 50rem;
+  width: 50rem;
+  background-color: var(--global-color-secondary);
+  margin-left: -20rem;
+}
+
+.boxNewRecipe .bxN .bxNPrimary .bgImage .imgNr {
+  position: absolute;
+  left: 10rem;
+  top: 8rem;
+  width: 50rem;
+  height: 50rem;
+  background-size: cover;
+  border-radius: 1rem;
+  object-fit: cover;
+  margin-left: -10rem;
+}
+
+.bxNSecondary {
+  margin-left: 18rem;
+}
+
+.boxNewRecipe .bxN .bxNSecondary .line {
+  margin-top: 2rem;
+  width: 10rem;
+  height: 0.2rem;
+  background-color: #3f3a3a;
+}
+
+.boxNewRecipe .bxN .bxNSecondary .txtRecipeTwo {
+  margin-top: 10rem;
+  width: 45rem;
+  font-size: 4rem;
+  color: #3f3a3a;
+}
+
+.boxNewRecipe .bxN .bxNSecondary p {
+  margin-top: 3.7rem;
+  width: 53rem;
+  font-size: 2.4rem;
+  font-family: var(--global-font-family);
+  color: #3f3a3a;
+}
+
+.boxNewRecipe .bxN .bxNSecondary button {
+  margin-top: 5rem;
+  width: 20rem;
+  height: 6rem;
+  background-color: var(--global-color-secondary);
+  border: none;
+  font-size: 2rem;
+  font-family: var(--global-font-family);
+  color: var(--global-text-primary);
+  border-radius: 0.8rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.boxNewRecipe .bxN .bxNSecondary button:active {
+  outline: none;
+}
+
+.boxNewRecipe .bxN .bxNSecondary button:hover {
+  background-color: #c4c4c4;
+}
+
+.boxLsPopular {
+  margin-top: 20rem;
+  position: relative;
+  height: 100%;
+}
+
+.boxLsPopular .boxImage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxLsPopular .boxImage img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.boxLsPopular .boxImage h4 {
+  position: absolute;
+  bottom: 2rem;
+  width: 18rem;
+  left: 4rem;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: var(--global-font-family);
+  color: #3f3a3a;
+}
+
+.mb-5 {
+  margin-bottom: 10rem !important;
+}
+.boxOne {
+  margin-bottom: 5rem;
+}
+
+/* @media screen and (max-widt: 990) {
+    .secondary-navbar {
+      display: none;
+    }
+  } */
+
+@media only screen and (max-width: 720px) {
+  * {
+    font-size: 50%;
+  }
+  .search {
+    width: 40rem !important;
+  }
+  .txtHero {
+    font-size: 5rem !important;
+  }
+  /* .food-decoration {
+      display: flex;
+      left: 20rem !important;
+    } */
+  .cover {
+    z-index: 1;
+  }
+  .wrappingImage {
+    display: flex;
+    flex-direction: column;
+  }
+  .bxN {
+    flex-direction: column;
+  }
+
+  .bgImage {
+    height: 40rem !important;
+  }
+  .imgNr {
+    width: 40rem !important;
+    height: 40rem !important;
+  }
+  .bxNSecondary {
+    margin-top: 2rem;
+    margin-left: -2rem;
+  }
+  .txtRecipeTwo {
+    font-size: 4rem;
+  }
+  .bxNSecondary p {
+    max-width: 40rem;
+  }
+  .boxLsPopular {
+    align-items: center;
+    justify-content: center;
+  }
+  .boxImage {
+    margin-top: 5rem;
+  }
+  .boxImage h4 {
+    left: -3rem !important;
+  }
+  .boxOne .boxImage {
+    display: none;
+  }
+
+  .boxTwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cr {
+    width: 60% !important;
+  }
+  .pijarcamp {
+    right: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .cover {
+    margin-top: -8rem !important;
+    margin-left: -8rem !important;
+  }
+  .foodDecoration {
+    position: absolute;
+    display: flex;
+    bottom: -25rem;
+  }
+  .boxImage h4 {
+    left: -8rem !important;
+  }
+  .bgImage img {
+    margin-left: -5rem !important;
+    width: 30rem !important;
+    height: 30rem !important;
+  }
+  .vegetable,
+  .food {
+    width: 40rem !important;
+    height: 40rem !important;
+    right: 0.1rem !important;
+  }
+  .bxNSecondary {
+    margin-left: 4rem;
+  }
+  .bxNSecondary h1 {
+    font-size: 5rem !important;
+    width: 35rem !important;
+  }
+  .bxNSecondary p {
+    width: 35rem !important;
+  }
+  .navbar-toggler {
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+  }
+  .navbarTogglerIcon {
+    height: 15px;
+    width: 15px;
+    background-color: var(--global-color-primary);
+  }
+}

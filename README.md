@@ -84,12 +84,12 @@ npm install
 
 | Home Page                                                                                                    | Add Recipe Page                                                                                                            |
 | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ![Home](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/landingpage_home.png "Home Page") | ![Add Recipe](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/AddRecipe.PNG "Add Recipe Page") |
+| ![Home](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/landingpage_home.png "Home Page") | ![Add Recipe](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/AddRecipe.png "Add Recipe Page") |
 
 
 | Profile Page                                                                                                    | Add Recipe Page                                                                                                            |
 | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ![Profile](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/Profile_recipe.png "Home Page") | ![Add Recipe](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/AddRecipe2.PNG "Add Recipe Page") |
+| ![Profile](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/Profile_recipe2.png "Home Page") | ![Add Recipe](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/AddRecipe1.png "Add Recipe Page") |
 
 
 

@@ -79,7 +79,7 @@ npm install
 
 | Login Page                                                                                                    | Register Page                                                                                                            |
 | ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| ![Login](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/login.PNG "Login Page") | ![Register](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/register.png "Register Page") |
+| ![Login](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/login.png "Login Page") | ![Register](https://github.com/Giansandi025/FoodRecipe-FrondEnd/blob/main/ss/register.png "Register Page") |
 
 
 | Home Page                                                                                                    | Add Recipe Page                                                                                                            |

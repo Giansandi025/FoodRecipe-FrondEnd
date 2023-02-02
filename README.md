@@ -42,7 +42,6 @@ Food Recipe - App is a food recipe application that aims to share recipes with f
 
 This app was built with some technologies below:
 
-- [React Js](https://reactjs.org)
 - [Bootstrap](https://www.npmjs.com/package/bootstrap)
 - [Next Js](https://nextjs.org/)
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom)

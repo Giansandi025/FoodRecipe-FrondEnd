@@ -85,10 +85,6 @@ const Register = () => {
                         New Password*
                         <input type="password" onChange={(e) => onChangeInput(e.target.value, 'password2')} id="password2" placeholder="New Password" style={style.FormInput} />
                     </div>
-                    {/* <div style={style.FormPassword}>
-                        Profile Photo*
-                        <input type="file" onChange={(e) => onChangeInput(e.target.files[0], 'photo')} id="photo" style={style.FormInput} />
-                    </div> */}
                     <div style={style.FormTerms}>
                         <input type="checkbox" onChange={(e) => onChangeInput(e.target.checked, 'terms')} id="terms" style={style.FormTerms1} />
                         <label htmlFor="terms" style={{ ...style.FormTerms1, paddingLeft: '5px' }}>I agree to terms & conditions</label>

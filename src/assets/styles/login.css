@@ -1,0 +1,9 @@
+.leftSide::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(239,200,26,0.8);
+}

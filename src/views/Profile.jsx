@@ -89,16 +89,6 @@ const Profile = () => {
                 <h5>My Recipe</h5>
                 </NavLink>
             </NavItem>
-            {/* <NavItem>
-                <NavLink className={activeTab === '2' ? 'active' : ''} onClick={() => setActiveTab('2')}>
-                <h5>Saved Recipe</h5>
-                </NavLink>
-            </NavItem> */}
-            {/* <NavItem>
-                <NavLink className={activeTab === '3' ? 'active' : ''} onClick={() => setActiveTab('3')}>
-                <h5>Liked Recipe</h5>
-                </NavLink>
-            </NavItem> */}
             </Nav>
 
       <TabContent activeTab={activeTab} style={{ marginTop: '35px' }}>

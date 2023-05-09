@@ -98,6 +98,7 @@ npm install
 
 - [`BACKEND FOOD RECIPE APP`](https://github.com/Giansandi025/FoodRecipe-Backend)
 - [`FRONTEND FOOD RECIPE APP`](https://github.com/Giansandi025/FoodRecipe-FrondEnd)
+- [`DEMO`](https://food-recipe-5b1211.netlify.app/)
 
 
 ## License
